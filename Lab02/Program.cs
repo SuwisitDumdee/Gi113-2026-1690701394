@@ -48,7 +48,7 @@ namespace Lab02
             string playerName1 = "Aungpao";
             char rank1 = 'S';
             int level1 = 7;
-            int maxHp1 = 240;
+            int maxHp1 = 240;                                     // Status of Character 1
             int currentHp1 = 175;
             float attackPower1 = 42.5f;
             double critMultiplier1 = 1.75;
@@ -67,7 +67,7 @@ namespace Lab02
             string playerName2 = "Kawin";
             char rank2 = 'A';
             int level2 = 15;
-            int maxStamina2 = 1000;
+            int maxStamina2 = 1000;                              // Status of Character 2
             int currentStamina2 = 1000;
             float attackPower2 = 68.5f;
             double critMultiplier2 = 2.10;
@@ -86,7 +86,7 @@ namespace Lab02
             string playerName3 = "Numpan";
             char rank3 = 'B';
             int level3 = 12;
-            int maxMana3 = 750;
+            int maxMana3 = 750;                                  // Status of Character 3
             int currentMana3 = 750;
             float attackPower3 = 75.5f;
             double critMultiplier3 = 1.95;
@@ -105,7 +105,7 @@ namespace Lab02
             string playerName4 = "Tae";
             char rank4 = 'S';
             int level4 = 30;
-            int maxDefense4 = 470;
+            int maxDefense4 = 470;                               // Status of Character 4
             int currentDefense4 = 470;
             float attackPower4 = 120.5f;
             double critMultiplier4 = 2.50;
