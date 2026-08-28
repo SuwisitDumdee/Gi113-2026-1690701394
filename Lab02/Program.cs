@@ -31,7 +31,7 @@ namespace Lab02
             Console.WriteLine($"Is Boss: {isBoss}");
             Console.WriteLine();
 
-            int hpPercent = currentHp * 10 / maxHp;      
+            int hpPercent = currentHp * 10 / maxHp;
             Console.WriteLine($"HP Percent: {hpPercent}%");
             Console.WriteLine();
 
@@ -45,7 +45,7 @@ namespace Lab02
             Console.WriteLine($"HP Percent: {hpPercent}%");
 
             // Part B
-            string playerName1 = "Kawin";
+            string playerName1 = "Aungpao";
             char rank1 = 'S';
             int level1 = 7;
             int maxHp1 = 240;
@@ -64,12 +64,11 @@ namespace Lab02
             Console.WriteLine($"IS BOSS: {isBoss1}");
             Console.WriteLine();
 
-
-            string playerName2 = "Numpan";
+            string playerName2 = "Kawin";
             char rank2 = 'A';
             int level2 = 15;
-            int maxHp2 = 450;
-            int currentHp2 = 390;
+            int maxStamina2 = 1000;
+            int currentStamina2 = 1000;
             float attackPower2 = 68.5f;
             double critMultiplier2 = 2.10;
             bool isBoss2 = false;
@@ -78,18 +77,17 @@ namespace Lab02
             Console.WriteLine($"NAME: {playerName2}");
             Console.WriteLine($"RANK: {rank2}");
             Console.WriteLine($"LEVEL: {level2}");
-            Console.WriteLine($"HP: {currentHp2} / {maxHp2}");
+            Console.WriteLine($"STAMINA: {currentStamina2} / {maxStamina2}");
             Console.WriteLine($"ATTACK POWER: {attackPower2}");
             Console.WriteLine($"CRIT MULTIPLIER: {critMultiplier2}");
             Console.WriteLine($"IS BOSS: {isBoss2}");
             Console.WriteLine();
 
-
-            string playerName3 = "Jippo";
+            string playerName3 = "Numpan";
             char rank3 = 'B';
             int level3 = 12;
-            int maxHp3 = 350;
-            int currentHp3 = 210;
+            int maxMana3 = 750;
+            int currentMana3 = 750;
             float attackPower3 = 75.5f;
             double critMultiplier3 = 1.95;
             bool isBoss3 = false;
@@ -98,18 +96,17 @@ namespace Lab02
             Console.WriteLine($"NAME: {playerName3}");
             Console.WriteLine($"RANK: {rank3}");
             Console.WriteLine($"LEVEL: {level3}");
-            Console.WriteLine($"HP: {currentHp3} / {maxHp3}");
+            Console.WriteLine($"MANA: {currentMana3} / {maxMana3}");
             Console.WriteLine($"ATTACK POWER: {attackPower3}");
             Console.WriteLine($"CRIT MULTIPLIER: {critMultiplier3}");
             Console.WriteLine($"IS BOSS: {isBoss3}");
             Console.WriteLine();
 
-
-            string playerName4 = "P'Tae";
+            string playerName4 = "Tae";
             char rank4 = 'S';
             int level4 = 30;
-            int maxHp4 = 1000;
-            int currentHp4 = 850;
+            int maxDefense4 = 470;
+            int currentDefense4 = 470;
             float attackPower4 = 120.5f;
             double critMultiplier4 = 2.50;
             bool isBoss4 = true;
@@ -118,7 +115,7 @@ namespace Lab02
             Console.WriteLine($"NAME: {playerName4}");
             Console.WriteLine($"RANK: {rank4}");
             Console.WriteLine($"LEVEL: {level4}");
-            Console.WriteLine($"HP: {currentHp4} / {maxHp4}");
+            Console.WriteLine($"DEFENSE: {currentDefense4} / {maxDefense4}");
             Console.WriteLine($"ATTACK POWER: {attackPower4}");
             Console.WriteLine($"CRIT MULTIPLIER: {critMultiplier4}");
             Console.WriteLine($"IS BOSS: {isBoss4}");
