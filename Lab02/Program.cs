@@ -22,7 +22,7 @@ namespace Lab02
             double critMultiplier = 1.75;
             bool isBoss = true;
 
-            Console.WriteLine("BOSS STATUS: INITIAL");
+            Console.WriteLine("===BOSS STATUS: INITIAL===");
             Console.WriteLine($"Name: {bossName}");
             Console.WriteLine($"Rank: {rank}");
             Console.WriteLine($"HP: {currentHp} / {maxHp}");
@@ -48,7 +48,7 @@ namespace Lab02
             string playerName1 = "Aungpao";
             char rank1 = 'S';
             int level1 = 7;
-            int maxHp1 = 240;                                     // Status of Character 1
+            int maxHp1 = 240;                                     // Status of Character 1 
             int currentHp1 = 175;
             float attackPower1 = 42.5f;
             double critMultiplier1 = 1.75;
@@ -120,6 +120,38 @@ namespace Lab02
             Console.WriteLine($"CRIT MULTIPLIER: {critMultiplier4}");
             Console.WriteLine($"IS BOSS: {isBoss4}");
             Console.WriteLine();
+
+            int player1X = 0;
+            int player1Y = 0;
+
+            Console.WriteLine("PLAYER 1 MOVEMENT");
+            Console.WriteLine("W = Up");
+            Console.WriteLine("S = Down");
+            Console.WriteLine("A = Left");
+            Console.WriteLine("D = Right");
+
+            while (true)
+            {
+                Console.WriteLine($"Player 1 Position: X = {player1X}, Y = {player1Y}");
+                ConsoleKey key = Console.ReadKey(true).Key;
+                if (key == ConsoleKey.W)
+                {
+                    player1Y++;
+                }
+                if (key == ConsoleKey.S)
+                {
+                    player1Y--;
+                }
+                if ( key == ConsoleKey.D)
+                {
+                    player1X++;
+                }
+                if (key == ConsoleKey.A)
+                {
+                    player1X--;
+                }
+                Console.Clear ();
+            }
         }
     }
 }
