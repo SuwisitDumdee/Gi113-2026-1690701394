@@ -121,6 +121,7 @@ namespace Lab02
             Console.WriteLine($"IS BOSS: {isBoss4}");
             Console.WriteLine();
 
+            //Movement of Player 1
             int player1X = 0;
             int player1Y = 0;
 
