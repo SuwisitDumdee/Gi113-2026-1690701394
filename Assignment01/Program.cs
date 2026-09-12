@@ -16,11 +16,11 @@ namespace Assignment01
             var characterName = "The Destined One";
             var characterRank = 'S';
 
-            int characterLevel = 68;
-            int defense = 142;
-            int mana = 350;
-            int stamina = 480;
-            float attackPower = 185.5f;
+            int characterLevel = 256;
+            int defense = 304;
+            int mana = 500;
+            int stamina = 700;
+            float attackPower = 245.5f;
             double healthPoint = 920.5;
             bool hasGourd = true;
 
