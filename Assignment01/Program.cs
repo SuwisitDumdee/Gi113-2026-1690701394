@@ -11,6 +11,7 @@ namespace Assignment01
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
             const string GameTitle = @"
  ██████╗ ██╗      █████╗  ██████╗██╗  ██╗
  ██╔══██╗██║     ██╔══██╗██╔════╝██║ ██╔╝
@@ -38,12 +39,12 @@ namespace Assignment01
             var characterRank = 'S';
 
             int characterLevel = 256;
-            int defense = 304;
-            int mana = 500;
-            int stamina = 700;
-            float attackPower = 245.5f;
+            int defenseRating = 304;
+            int manaPool = 500;
+            int staminaPool = 700;
+            float attackDamage = 245.5f;
             double healthPoint = 920.5;
-            bool hasGourd = true;
+            bool hasHealingGourd = true;
 
             Console.WriteLine("╔════════════════════════════════════════════════════════════╗");
             Console.WriteLine(GameTitle);
@@ -53,11 +54,11 @@ namespace Assignment01
             Console.WriteLine($"║ Level     : {characterLevel}");
             Console.WriteLine("╠════════════════════════════════════════════════════════════╣");
             Console.WriteLine($"║ HP        : {healthPoint}");
-            Console.WriteLine($"║ Mana      : {mana}");
-            Console.WriteLine($"║ Stamina   : {stamina}");
-            Console.WriteLine($"║ Attack    : {attackPower}");
-            Console.WriteLine($"║ DEF       : {defense}");
-            Console.WriteLine($"║ Gourd     : {hasGourd}");
+            Console.WriteLine($"║ Mana      : {manaPool}");
+            Console.WriteLine($"║ Stamina   : {staminaPool}");
+            Console.WriteLine($"║ Attack    : {attackDamage}");
+            Console.WriteLine($"║ DEF       : {defenseRating}");
+            Console.WriteLine($"║ Gourd     : {hasHealingGourd}");
             Console.WriteLine("╚════════════════════════════════════════════════════════════╝");
 
             Console.WriteLine();
@@ -70,12 +71,12 @@ namespace Assignment01
             Console.WriteLine();
             Console.WriteLine("----- Cast vs Convert -----");
 
-            int attackCast = (int)attackPower;
-            int attackConvert = Convert.ToInt32(attackPower);
+            int attackCast = (int)attackDamage;
+            int attackConvert = Convert.ToInt32(attackDamage);
 
             Console.WriteLine($"Attack with cast    : {attackCast}");
             Console.WriteLine($"Attack with Convert : {attackConvert}");
-
+            Console.WriteLine();
         }
     }
 }
