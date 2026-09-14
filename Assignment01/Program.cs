@@ -53,11 +53,11 @@ namespace Assignment01
             Console.WriteLine($"║ Rank      : {characterRank}");
             Console.WriteLine($"║ Level     : {characterLevel}");
             Console.WriteLine("╠════════════════════════════════════════════════════════════╣");
-            Console.WriteLine($"║ HP        : {healthPoint}");
-            Console.WriteLine($"║ Mana      : {manaPool}");
-            Console.WriteLine($"║ Stamina   : {staminaPool}");
-            Console.WriteLine($"║ Attack    : {attackDamage}");
-            Console.WriteLine($"║ DEF       : {defenseRating}");
+            Console.WriteLine($"║ MAXHP        : {healthPoint}");
+            Console.WriteLine($"║ MAXMana      : {manaPool}");
+            Console.WriteLine($"║ MAXStamina   : {staminaPool}");
+            Console.WriteLine($"║ AttackPower    : {attackDamage}");
+            Console.WriteLine($"║ DEFENSE       : {defenseRating}");
             Console.WriteLine($"║ Gourd     : {hasHealingGourd}");
             Console.WriteLine("╚════════════════════════════════════════════════════════════╝");
 
