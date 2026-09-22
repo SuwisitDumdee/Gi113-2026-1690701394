@@ -19,17 +19,40 @@ namespace Lab06
             int monAtk = 50;
             bool shieldActive = false;
 
-            Console.WriteLine(">>> JIPPO SLAYER <<<");
-            Console.WriteLine("ACTION 1: ATTACK");
-            Console.WriteLine("ACTION 2: DEFENSE ATTACK");
-            Console.WriteLine("ACTION 3: RESTORE MANA");
+            Console.WriteLine("+--------------------------------------+");
+            Console.WriteLine("|            JIPPO SLAYER             |");
+            Console.WriteLine("+--------------------------------------+");
+            Console.WriteLine("|                                      |");
+            Console.WriteLine("|  [1] ATTACK                         |");
+            Console.WriteLine("|      Attack the monster              |");
+            Console.WriteLine("|                                      |");
+            Console.WriteLine("|  [2] DEFENSE ATTACK                 |");
+            Console.WriteLine("|      Block 50% damage                |");
+            Console.WriteLine("|                                      |");
+            Console.WriteLine("|  [3] RESTORE MANA                   |");
+            Console.WriteLine("|      Recover 30 Mana                 |");
+            Console.WriteLine("|                                      |");
+            Console.WriteLine("+--------------------------------------+");
+            Console.WriteLine("|                                      |");
+            Console.WriteLine($"|  HP   : {heroHp,-3} / 100                  |");
+            Console.WriteLine($"|  MANA : {heroMana,-3} / 100                  |");
+            Console.WriteLine($"|  MONSTER HP : {monHp,-3} / 100             |");
+            Console.WriteLine("|                                      |");
+            Console.WriteLine("+--------------------------------------+");
 
-            Console.Write("CHOOSE YOUR ACTION (1-3): ");
-            bool isInputValid = int.TryParse(Console.ReadLine(), out int choice);
+            Console.WriteLine();
+            Console.Write(">>> CHOOSE YOUR ACTION (1-3): ");
+
+            bool isInputValid = int.TryParse(
+                Console.ReadLine(),
+                out int choice
+            );
 
             if (isInputValid == false || choice < 1 || choice > 3)
             {
-                Console.WriteLine("Invalid Input, Please enter action between 1 and 3");
+                Console.WriteLine(
+                    "Invalid Input, Please enter action between 1 and 3"
+                );
             }
             else if (choice == 1)
             {
@@ -37,11 +60,21 @@ namespace Lab06
 
                 if (monHp <= 0)
                 {
-                    Console.WriteLine($"Hero attacked the monster!!! with {heroAtk} DMG, Monster is defeated!");
+                    Console.WriteLine();
+                    Console.WriteLine(
+                        $"Hero attacked the monster with {heroAtk} DMG!"
+                    );
+                    Console.WriteLine("Monster is defeated!");
                 }
                 else
                 {
-                    Console.WriteLine($"Hero attacked the monster!!! with {heroAtk} DMG, Monster now have {monHp} HP left!");
+                    Console.WriteLine();
+                    Console.WriteLine(
+                        $"Hero attacked the monster with {heroAtk} DMG!"
+                    );
+                    Console.WriteLine(
+                        $"Monster now has {monHp} HP left!"
+                    );
                 }
             }
             else if (choice == 2)
@@ -61,7 +94,10 @@ namespace Lab06
             {
                 heroMana += manaRestore;
 
-                Console.WriteLine($"Hero restored {manaRestore} Mana, Hero Mana is now {heroMana} Points");
+                Console.WriteLine();
+                Console.WriteLine("Hero restored Mana!");
+                Console.WriteLine($"Hero recovered {manaRestore} Mana.");
+                Console.WriteLine($"Hero Mana is now {heroMana} Points.");
             }
 
 
