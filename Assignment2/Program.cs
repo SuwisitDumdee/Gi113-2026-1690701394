@@ -12,8 +12,8 @@ namespace Assignment2
         static void Main(string[] args)
         {
             const string MaterialName = "Iron";
-            const double SmeltRate = 0.2500;
-            const double SalvageRate = 0.3000;
+            const double SmeltRate = 0.25;
+            const double SalvageRate = 0.30;
             const double MaxBatch = 500.0;
 
             Console.WriteLine();
