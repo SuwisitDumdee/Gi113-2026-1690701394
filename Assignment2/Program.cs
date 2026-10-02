@@ -16,7 +16,6 @@ namespace Assignment2
             const double SalvageRate = 0.30;
             const double MaxBatch = 500.0;
 
-            Console.WriteLine();
             Console.WriteLine("╔══════════════════════════════════════════════╗");
             Console.WriteLine("║                 DRAGONFORGE                  ║");
             Console.WriteLine("║           THE ANCIENT IRON WORKS             ║");
@@ -27,7 +26,6 @@ namespace Assignment2
             Console.WriteLine($"║  Max Batch      : {MaxBatch,-26:F2} ║");
             Console.WriteLine("╚══════════════════════════════════════════════╝");
 
-            Console.WriteLine();
             Console.WriteLine("┌──────────────────────────────────────────────┐");
             Console.WriteLine("│                  FORGE MENU                  │");
             Console.WriteLine("├──────────────────────────────────────────────┤");
@@ -39,8 +37,6 @@ namespace Assignment2
             Console.WriteLine("│          Ingot ======> Ore                   │");
             Console.WriteLine("│                                              │");
             Console.WriteLine("└──────────────────────────────────────────────┘");
-
-            Console.WriteLine();
 
             Console.Write("Choose Menu [S/B] : ");
             string menuInput = Console.ReadLine();
@@ -60,7 +56,6 @@ namespace Assignment2
                 {
                     double ingot = amount * SmeltRate;
 
-                    Console.WriteLine();
                     Console.WriteLine("╔══════════════════════════════════════════════╗");
                     Console.WriteLine("║                 SMELTING COMPLETE            ║");
                     Console.WriteLine("╠══════════════════════════════════════════════╣");
@@ -76,7 +71,6 @@ namespace Assignment2
                 {
                     double ore = amount / SalvageRate;
 
-                    Console.WriteLine();
                     Console.WriteLine("╔══════════════════════════════════════════════╗");
                     Console.WriteLine("║               BREAKDOWN COMPLETE             ║");
                     Console.WriteLine("╠══════════════════════════════════════════════╣");
@@ -90,7 +84,6 @@ namespace Assignment2
                 }
                 else
                 {
-                    Console.WriteLine();
                     Console.WriteLine("╔══════════════════════════════════════════════╗");
                     Console.WriteLine("║                    ERROR                     ║");
                     Console.WriteLine("╠══════════════════════════════════════════════╣");
@@ -102,7 +95,6 @@ namespace Assignment2
             }
             else
             {
-                Console.WriteLine();
                 Console.WriteLine("╔══════════════════════════════════════════════╗");
                 Console.WriteLine("║                  ERROR                       ║");
                 Console.WriteLine("╠══════════════════════════════════════════════╣");
@@ -110,13 +102,10 @@ namespace Assignment2
                 Console.WriteLine($"║  Amount must be > 0 and <= {MaxBatch:F2}.        ║");
                 Console.WriteLine("╚══════════════════════════════════════════════╝");
             }
-
-            Console.WriteLine();
             Console.WriteLine("╔══════════════════════════════════════════════╗");
             Console.WriteLine("║          DRAGONFORGE SESSION CLOSED          ║");
             Console.WriteLine("║       May your next forge burn brighter.     ║");
             Console.WriteLine("╚══════════════════════════════════════════════╝");
-            Console.WriteLine();
         }
     }
 }
