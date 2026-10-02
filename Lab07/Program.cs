@@ -41,8 +41,6 @@ namespace Lab07
             Console.Write("Choose (1-5): ");
             int.TryParse(Console.ReadLine(), out int command);
 
-            Console.WriteLine();
-
             switch (command)
             {
                 case 1:
@@ -118,8 +116,6 @@ namespace Lab07
                     Console.WriteLine("Please type Y or N.");
                     break;
             }
-
-            Console.WriteLine();
             Console.WriteLine("======================================");
             Console.WriteLine("       BATTLE SESSION COMPLETE");
             Console.WriteLine("======================================");
