@@ -15,7 +15,6 @@ namespace Lab07
         {
             const int MonsterHp = 10;
 
-            Console.WriteLine();
             Console.WriteLine("======================================");
             Console.WriteLine("      ==>>> DRAGON SLAYER <<<==");
             Console.WriteLine("======================================");
@@ -24,12 +23,10 @@ namespace Lab07
             Console.Write("Monster Defense: ");
             int.TryParse(Console.ReadLine(), out int monsterDefense);
 
-            Console.WriteLine();
             Console.WriteLine("--------------------------------------");
             Console.WriteLine($"A Slime appears! HP {MonsterHp}, DEF {monsterDefense}");
             Console.WriteLine("--------------------------------------");
 
-            Console.WriteLine();
             Console.WriteLine("=========== BATTLE MENU =============");
             Console.WriteLine("1) Attack");
             Console.WriteLine("2) Fire Magic");
@@ -95,8 +92,6 @@ namespace Lab07
                 : "still standing";
 
             Console.WriteLine($"Slime: {monsterStatus}");
-
-            Console.WriteLine();
             Console.Write("Really run away? (Y/N): ");
             string answer = Console.ReadLine();
 
